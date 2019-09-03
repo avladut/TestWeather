@@ -18,6 +18,18 @@
 		FAD7D1C123172B4F00BCD1AF /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1C023172B4F00BCD1AF /* LocationsViewController.swift */; };
 		FAD7D1C323172B7300BCD1AF /* AddNewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1C223172B7300BCD1AF /* AddNewLocationViewController.swift */; };
 		FAD7D1C523172B9A00BCD1AF /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1C423172B9A00BCD1AF /* LocationCell.swift */; };
+		FAD7D1CB23172F8100BCD1AF /* SearchLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1CA23172F8100BCD1AF /* SearchLocationInteractor.swift */; };
+		FAD7D1CD2317312400BCD1AF /* SearchLocationInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1CC2317312400BCD1AF /* SearchLocationInteractorImpl.swift */; };
+		FAD7D1CF23173BF800BCD1AF /* SearchLocationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1CE23173BF800BCD1AF /* SearchLocationViewModelTests.swift */; };
+		FAD7D1D123173CBC00BCD1AF /* LocationSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1D023173CBC00BCD1AF /* LocationSearchModel.swift */; };
+		FAD7D1D3231863A500BCD1AF /* LocationWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1D2231863A500BCD1AF /* LocationWeatherCell.swift */; };
+		FAD7D1D5231865A100BCD1AF /* SearchLocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1D4231865A100BCD1AF /* SearchLocationCellViewModel.swift */; };
+		FAD7D1D7231865B600BCD1AF /* SearchLocationCellViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1D6231865B600BCD1AF /* SearchLocationCellViewModelImpl.swift */; };
+		FAD7D1D92318697800BCD1AF /* SearchLocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1D82318697800BCD1AF /* SearchLocationsViewModel.swift */; };
+		FAD7D1DB2318699000BCD1AF /* SearchLocationsViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1DA2318698F00BCD1AF /* SearchLocationsViewModelImpl.swift */; };
+		FAD7D1DF2319809200BCD1AF /* CoreDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1DE2319809200BCD1AF /* CoreDataInteractor.swift */; };
+		FAD7D1E123198FB600BCD1AF /* CoreDataInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1E023198FB600BCD1AF /* CoreDataInteractorImpl.swift */; };
+		FAD7D1E6231C9B2300BCD1AF /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1E5231C9B2300BCD1AF /* ErrorHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +62,18 @@
 		FAD7D1C023172B4F00BCD1AF /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		FAD7D1C223172B7300BCD1AF /* AddNewLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewLocationViewController.swift; sourceTree = "<group>"; };
 		FAD7D1C423172B9A00BCD1AF /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		FAD7D1CA23172F8100BCD1AF /* SearchLocationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationInteractor.swift; sourceTree = "<group>"; };
+		FAD7D1CC2317312400BCD1AF /* SearchLocationInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationInteractorImpl.swift; sourceTree = "<group>"; };
+		FAD7D1CE23173BF800BCD1AF /* SearchLocationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationViewModelTests.swift; sourceTree = "<group>"; };
+		FAD7D1D023173CBC00BCD1AF /* LocationSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchModel.swift; sourceTree = "<group>"; };
+		FAD7D1D2231863A500BCD1AF /* LocationWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherCell.swift; sourceTree = "<group>"; };
+		FAD7D1D4231865A100BCD1AF /* SearchLocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationCellViewModel.swift; sourceTree = "<group>"; };
+		FAD7D1D6231865B600BCD1AF /* SearchLocationCellViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationCellViewModelImpl.swift; sourceTree = "<group>"; };
+		FAD7D1D82318697800BCD1AF /* SearchLocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationsViewModel.swift; sourceTree = "<group>"; };
+		FAD7D1DA2318698F00BCD1AF /* SearchLocationsViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationsViewModelImpl.swift; sourceTree = "<group>"; };
+		FAD7D1DE2319809200BCD1AF /* CoreDataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataInteractor.swift; sourceTree = "<group>"; };
+		FAD7D1E023198FB600BCD1AF /* CoreDataInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataInteractorImpl.swift; sourceTree = "<group>"; };
+		FAD7D1E5231C9B2300BCD1AF /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +142,6 @@
 				FA8BE7CD23170AE20047C64E /* User Interface */,
 				FA8BE7C623170A520047C64E /* Classes */,
 				FA8BE7A223170A170047C64E /* AppDelegate.swift */,
-				FA8BE7A623170A170047C64E /* Main.storyboard */,
 				FA8BE7AC23170A180047C64E /* Assets.xcassets */,
 				FA8BE7AE23170A180047C64E /* LaunchScreen.storyboard */,
 				FA8BE7B123170A180047C64E /* Info.plist */,
@@ -131,6 +154,7 @@
 			children = (
 				FA8BE7BA23170A180047C64E /* TestWeatherTests.swift */,
 				FA8BE7BC23170A180047C64E /* Info.plist */,
+				FAD7D1CE23173BF800BCD1AF /* SearchLocationViewModelTests.swift */,
 			);
 			path = TestWeatherTests;
 			sourceTree = "<group>";
@@ -147,10 +171,10 @@
 		FA8BE7C623170A520047C64E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7D1E22319B50B00BCD1AF /* Utils */,
 				FA8BE7CB23170AB60047C64E /* Models */,
 				FA8BE7C923170A8C0047C64E /* ViewModels */,
 				FA8BE7C823170A840047C64E /* Interactors */,
-				FA8BE7C723170A760047C64E /* CoreData */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -167,6 +191,8 @@
 		FA8BE7C823170A840047C64E /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7D1C923172E2800BCD1AF /* Implementations */,
+				FAD7D1C823172E1E00BCD1AF /* Interface */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -183,6 +209,7 @@
 		FA8BE7CB23170AB60047C64E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7D1D023173CBC00BCD1AF /* LocationSearchModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,6 +224,7 @@
 		FA8BE7CD23170AE20047C64E /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				FA8BE7A623170A170047C64E /* Main.storyboard */,
 				FA8BE7CE23170AFD0047C64E /* Custom Views */,
 				FA8BE7C523170A450047C64E /* ViewControllers */,
 			);
@@ -207,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD7D1C423172B9A00BCD1AF /* LocationCell.swift */,
+				FAD7D1D2231863A500BCD1AF /* LocationWeatherCell.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -214,6 +243,8 @@
 		FAD7D1C623172BB700BCD1AF /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7D1D4231865A100BCD1AF /* SearchLocationCellViewModel.swift */,
+				FAD7D1D82318697800BCD1AF /* SearchLocationsViewModel.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -221,8 +252,37 @@
 		FAD7D1C723172BC200BCD1AF /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7D1D6231865B600BCD1AF /* SearchLocationCellViewModelImpl.swift */,
+				FAD7D1DA2318698F00BCD1AF /* SearchLocationsViewModelImpl.swift */,
 			);
 			path = Implementations;
+			sourceTree = "<group>";
+		};
+		FAD7D1C823172E1E00BCD1AF /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7D1CA23172F8100BCD1AF /* SearchLocationInteractor.swift */,
+				FAD7D1DE2319809200BCD1AF /* CoreDataInteractor.swift */,
+				FA8BE7C723170A760047C64E /* CoreData */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		FAD7D1C923172E2800BCD1AF /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7D1CC2317312400BCD1AF /* SearchLocationInteractorImpl.swift */,
+				FAD7D1E023198FB600BCD1AF /* CoreDataInteractorImpl.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		FAD7D1E22319B50B00BCD1AF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7D1E5231C9B2300BCD1AF /* ErrorHandler.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,11 +453,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD7D1CD2317312400BCD1AF /* SearchLocationInteractorImpl.swift in Sources */,
+				FAD7D1DF2319809200BCD1AF /* CoreDataInteractor.swift in Sources */,
+				FAD7D1D3231863A500BCD1AF /* LocationWeatherCell.swift in Sources */,
 				FAD7D1C323172B7300BCD1AF /* AddNewLocationViewController.swift in Sources */,
+				FAD7D1DB2318699000BCD1AF /* SearchLocationsViewModelImpl.swift in Sources */,
 				FAD7D1C523172B9A00BCD1AF /* LocationCell.swift in Sources */,
+				FAD7D1E6231C9B2300BCD1AF /* ErrorHandler.swift in Sources */,
 				FA8BE7AB23170A170047C64E /* TestWeather.xcdatamodeld in Sources */,
+				FAD7D1D123173CBC00BCD1AF /* LocationSearchModel.swift in Sources */,
 				FA8BE7A323170A170047C64E /* AppDelegate.swift in Sources */,
+				FAD7D1D7231865B600BCD1AF /* SearchLocationCellViewModelImpl.swift in Sources */,
+				FAD7D1D5231865A100BCD1AF /* SearchLocationCellViewModel.swift in Sources */,
+				FAD7D1E123198FB600BCD1AF /* CoreDataInteractorImpl.swift in Sources */,
 				FAD7D1C123172B4F00BCD1AF /* LocationsViewController.swift in Sources */,
+				FAD7D1CB23172F8100BCD1AF /* SearchLocationInteractor.swift in Sources */,
+				FAD7D1D92318697800BCD1AF /* SearchLocationsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8BE7BB23170A180047C64E /* TestWeatherTests.swift in Sources */,
+				FAD7D1CF23173BF800BCD1AF /* SearchLocationViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
