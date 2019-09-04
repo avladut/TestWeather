@@ -23,7 +23,7 @@ class SearchLocationInteractorImpl {
     
     struct ParamValues {
         
-        static let googleAPIKey = "AIzaSyDD6r3v9MxaCTEv1y5KhpLQE_zJIW_kGBc"
+        static let googleAPIKey = WebApiKeys.googleAPIKey
         static let type = "(cities)"
     }
     

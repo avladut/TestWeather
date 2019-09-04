@@ -18,7 +18,7 @@ class AddNewLocationViewController: UIViewController {
     
     
     let locationsListViewModel: SearchLocationsViewModel = SearchLocationsViewModelImpl()
-    let disposeBag = DisposeBag()
+    private let disposeBag = DisposeBag()
     
     
     override func viewDidLoad() {
@@ -26,12 +26,10 @@ class AddNewLocationViewController: UIViewController {
         bindViewModel()
         setupCellTapHandling()
         configureSearchController()
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        //let cities = locationsListViewModel.searchLocation(pattern: "Londo")
     }
     
     
@@ -45,7 +43,6 @@ class AddNewLocationViewController: UIViewController {
             }
             cell.config(element)
             return cell
-            
             
             }.disposed(by: disposeBag)
         
@@ -71,18 +68,20 @@ class AddNewLocationViewController: UIViewController {
     func configureSearchController() {
         searchController.obscuresBackgroundDuringPresentation = false
         searchBar.showsCancelButton = true
-        //searchBar.text = "NavdeepSinghh"
         searchBar.placeholder = "Enter Location name"
         tblSearchResults.tableHeaderView = searchController.searchBar
         definesPresentationContext = true
         
         searchBar
-            .rx.text // Observable property thanks to RxCocoa
-            .orEmpty // Make it non-optional
-            .subscribe(onNext: { [unowned self] query in // Here we will be notified of every new value
+            .rx.text
+            .orEmpty
+            .throttle(.milliseconds(1500), scheduler: MainScheduler.instance)
+            .distinctUntilChanged() // If they didn't occur, check if the new value is the same as old.
+            .subscribe(onNext: { [unowned self] query in
                 if let searchString = self.searchBar.text, searchString.count > 2 {
-                    self.locationsListViewModel.searchString.accept(searchString)
+                    
                 }
+                self.locationsListViewModel.searchString.accept(query)
             })
             .disposed(by: disposeBag)
     }

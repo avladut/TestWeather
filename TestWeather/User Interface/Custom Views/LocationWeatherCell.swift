@@ -9,16 +9,27 @@
 import UIKit
 
 class LocationWeatherCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    @IBOutlet weak var lblPlaceName: UILabel!
+    public static let reuseIdentifier = "LocationWeatherCellReuseId"
+    @IBOutlet weak var lblWeatherDescription: UILabel!
+    
+    var locationViewModel: WeatherLocationCellViewModel?
+    
+    public func config (_ location: WeatherLocationCellViewModel) {
+        self.locationViewModel = location
+        self.lblPlaceName.text = location.locationName
+        location.updateWeatherData {
+            DispatchQueue.main.async {[weak self] in
+                self?.lblWeatherDescription.text = location.weatherDescription
+            }
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    public func clearCell() {
+        self.lblPlaceName.text = ""
+        self.lblWeatherDescription.text = ""
+        //self.locationViewModel?.cancelWeatherDataUpdate()
+        self.locationViewModel = nil
     }
-
 }

@@ -14,19 +14,7 @@ class LocationCell: UITableViewCell {
     
     public static let reuseIdentifier = "LocationCellReuseId"
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
     public func config (_ location: SearchLocationCellViewModel) {
         self.lblLocation.text = location.text
     }
-
 }

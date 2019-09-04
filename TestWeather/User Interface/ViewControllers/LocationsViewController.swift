@@ -7,29 +7,51 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class LocationsViewController: UIViewController {
+    
+    @IBOutlet weak var tblLocations: UITableView!
+    let locationsListViewModel: WeatherLocationListViewModel = WeatherLocationListViewModelImpl.getInstanceWithManagedContext(CoreDataConstants.mainContext)
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.bindViewModel()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-       
+        self.locationsListViewModel.updateSavedLocations()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func bindViewModel() {
+        
+        locationsListViewModel.savedLocations.asObservable().bind(to: self.tblLocations.rx.items) { tableView, index, element in
+            let indexPath = IndexPath(item: index, section: 0)
+            
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: LocationWeatherCell.reuseIdentifier, for: indexPath) as? LocationWeatherCell else {
+                return UITableViewCell()
+            }
+            cell.config(element)
+            return cell
+            
+            }.disposed(by: disposeBag)
+        
     }
-    */
-
 }
+
+extension LocationsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        guard let weatherCell = cell as? LocationWeatherCell else {
+//            return
+//        }
+        //for some reason calls this method every time
+        //TODO: Fix this
+        //weatherCell.clearCell()
+    }
+    
+}
+
+

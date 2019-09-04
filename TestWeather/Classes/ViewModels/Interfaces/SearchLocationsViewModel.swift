@@ -11,11 +11,11 @@ import RxSwift
 import RxCocoa
 
 protocol SearchLocationsViewModel {
+    
     typealias ObservableLocations = Observable<[SearchLocationCellViewModel]>
     
     var searchLocationsResult: Driver<[SearchLocationCellViewModel]> { get }
     var searchString: BehaviorRelay<String> { get }
     
-    func searchLocation(pattern: String) -> ObservableLocations
     func selectLocationAtIndex(index: Int) throws
 }
