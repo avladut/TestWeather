@@ -42,16 +42,5 @@ class LocationsViewController: UIViewController {
     }
 }
 
-extension LocationsViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        guard let weatherCell = cell as? LocationWeatherCell else {
-//            return
-//        }
-        //for some reason calls this method every time
-        //TODO: Fix this
-        //weatherCell.clearCell()
-    }
-    
-}
 
 

@@ -1,17 +1,24 @@
 //
-//  SearchLocationViewModelTests.swift
+//  SearchLocationsViewModelImplTests.swift
 //  TestWeatherTests
 //
-//  Created by Alex on 28/08/2019.
+//  Created by Alex on 05/09/2019.
 //  Copyright © 2019 Alex. All rights reserved.
 //
 
 import XCTest
+import RxBlocking
+import RxTest
+import RxSwift
+import RxCocoa
+@testable import TestWeather
 
-class SearchLocationViewModelTests: XCTestCase {
+//honestly no ideea how to test rxswift code, and too little time to learn now :)
+class SearchLocationsViewModelImplTests: XCTestCase {
+    var scheduler: TestScheduler!
+    var disposeBag: DisposeBag!
+    var searchLocationInteractorMock: SearchLocationInteractor!
 
-    static let sampleJSONResponse = ""
-    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }

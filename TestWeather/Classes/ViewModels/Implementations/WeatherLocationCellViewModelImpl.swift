@@ -15,6 +15,9 @@ class WeatherLocationCellViewModelImpl {
     private static let cityKeyParam = "q"
     private static let apiKeyParam = "APPID"
     
+    public static let defaultWeatherDescription = "updating..."
+    public static let defaultPlaceName = "Unknown"
+    
     
     let location: Location
     var weatherData: WeatherDataModel?
@@ -35,11 +38,11 @@ extension WeatherLocationCellViewModelImpl: WeatherLocationCellViewModel {
     }
     
     var locationName: String {
-        return self.location.name ?? "Unknown"
+        return self.location.name ?? type(of: self).defaultPlaceName
     }
     
     var weatherDescription: String {
-        return self.weatherData?.description ?? "updating..."
+        return self.weatherData?.description ?? type(of: self).defaultWeatherDescription
     }
     
     static func getInstance(location: Location) -> WeatherLocationCellViewModel {

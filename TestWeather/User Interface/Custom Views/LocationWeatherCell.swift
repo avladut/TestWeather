@@ -17,6 +17,7 @@ class LocationWeatherCell: UITableViewCell {
     var locationViewModel: WeatherLocationCellViewModel?
     
     public func config (_ location: WeatherLocationCellViewModel) {
+        //clearCell()
         self.locationViewModel = location
         self.lblPlaceName.text = location.locationName
         location.updateWeatherData {
@@ -26,10 +27,8 @@ class LocationWeatherCell: UITableViewCell {
         }
     }
     
-    public func clearCell() {
+    private func clearCell() {
         self.lblPlaceName.text = ""
         self.lblWeatherDescription.text = ""
-        //self.locationViewModel?.cancelWeatherDataUpdate()
-        self.locationViewModel = nil
     }
 }

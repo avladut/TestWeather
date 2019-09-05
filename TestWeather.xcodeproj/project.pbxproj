@@ -20,7 +20,6 @@
 		FAD7D1C523172B9A00BCD1AF /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1C423172B9A00BCD1AF /* LocationCell.swift */; };
 		FAD7D1CB23172F8100BCD1AF /* SearchLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1CA23172F8100BCD1AF /* SearchLocationInteractor.swift */; };
 		FAD7D1CD2317312400BCD1AF /* SearchLocationInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1CC2317312400BCD1AF /* SearchLocationInteractorImpl.swift */; };
-		FAD7D1CF23173BF800BCD1AF /* SearchLocationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1CE23173BF800BCD1AF /* SearchLocationViewModelTests.swift */; };
 		FAD7D1D123173CBC00BCD1AF /* LocationSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1D023173CBC00BCD1AF /* LocationSearchModel.swift */; };
 		FAD7D1D3231863A500BCD1AF /* LocationWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1D2231863A500BCD1AF /* LocationWeatherCell.swift */; };
 		FAD7D1D5231865A100BCD1AF /* SearchLocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1D4231865A100BCD1AF /* SearchLocationCellViewModel.swift */; };
@@ -37,6 +36,8 @@
 		FAD7D1F0231F38AC00BCD1AF /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1EF231F38AC00BCD1AF /* WeatherDataModel.swift */; };
 		FAD7D1F2231F41D700BCD1AF /* CoreDataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1F1231F41D700BCD1AF /* CoreDataConstants.swift */; };
 		FAD7D1F4231F4DFA00BCD1AF /* WebApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1F3231F4DFA00BCD1AF /* WebApiConstants.swift */; };
+		FAD7D1FA2320CCB800BCD1AF /* SearchLocationsViewModelImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1F92320CCB800BCD1AF /* SearchLocationsViewModelImplTests.swift */; };
+		FAD7D1FC2320CDE200BCD1AF /* WeatherLocationCellViewModelImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D1FB2320CDE200BCD1AF /* WeatherLocationCellViewModelImplTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +72,6 @@
 		FAD7D1C423172B9A00BCD1AF /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		FAD7D1CA23172F8100BCD1AF /* SearchLocationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationInteractor.swift; sourceTree = "<group>"; };
 		FAD7D1CC2317312400BCD1AF /* SearchLocationInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationInteractorImpl.swift; sourceTree = "<group>"; };
-		FAD7D1CE23173BF800BCD1AF /* SearchLocationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationViewModelTests.swift; sourceTree = "<group>"; };
 		FAD7D1D023173CBC00BCD1AF /* LocationSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchModel.swift; sourceTree = "<group>"; };
 		FAD7D1D2231863A500BCD1AF /* LocationWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherCell.swift; sourceTree = "<group>"; };
 		FAD7D1D4231865A100BCD1AF /* SearchLocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationCellViewModel.swift; sourceTree = "<group>"; };
@@ -88,6 +88,8 @@
 		FAD7D1EF231F38AC00BCD1AF /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		FAD7D1F1231F41D700BCD1AF /* CoreDataConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataConstants.swift; sourceTree = "<group>"; };
 		FAD7D1F3231F4DFA00BCD1AF /* WebApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApiConstants.swift; sourceTree = "<group>"; };
+		FAD7D1F92320CCB800BCD1AF /* SearchLocationsViewModelImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationsViewModelImplTests.swift; sourceTree = "<group>"; };
+		FAD7D1FB2320CDE200BCD1AF /* WeatherLocationCellViewModelImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocationCellViewModelImplTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +170,8 @@
 			children = (
 				FA8BE7BA23170A180047C64E /* TestWeatherTests.swift */,
 				FA8BE7BC23170A180047C64E /* Info.plist */,
-				FAD7D1CE23173BF800BCD1AF /* SearchLocationViewModelTests.swift */,
+				FAD7D1F92320CCB800BCD1AF /* SearchLocationsViewModelImplTests.swift */,
+				FAD7D1FB2320CDE200BCD1AF /* WeatherLocationCellViewModelImplTests.swift */,
 			);
 			path = TestWeatherTests;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				FA8BE7B223170A180047C64E /* Sources */,
 				FA8BE7B323170A180047C64E /* Frameworks */,
 				FA8BE7B423170A180047C64E /* Resources */,
+				95E5981BDB61C92F8ED4B42C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -450,6 +454,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		95E5981BDB61C92F8ED4B42C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestWeatherTests/Pods-TestWeatherTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestWeatherTests/Pods-TestWeatherTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestWeatherTests/Pods-TestWeatherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		98E5A007CC424364E0A9C8B0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,8 +525,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD7D1FC2320CDE200BCD1AF /* WeatherLocationCellViewModelImplTests.swift in Sources */,
 				FA8BE7BB23170A180047C64E /* TestWeatherTests.swift in Sources */,
-				FAD7D1CF23173BF800BCD1AF /* SearchLocationViewModelTests.swift in Sources */,
+				FAD7D1FA2320CCB800BCD1AF /* SearchLocationsViewModelImplTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

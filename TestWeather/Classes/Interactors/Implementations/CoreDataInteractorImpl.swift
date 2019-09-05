@@ -13,9 +13,7 @@ import RxCocoa
 
 class CoreDataInteractorImpl {
     
-    static let locationEntityName = "Location"
-    
-    let context: NSManagedObjectContext
+    private let context: NSManagedObjectContext
     
     init(managedContext: NSManagedObjectContext) {
         self.context = managedContext
@@ -30,7 +28,7 @@ extension CoreDataInteractorImpl: CoreDataInteractor {
     
     func saveLocation(location: LocationSearchModel) throws {
         
-        guard let locationManagedObject = NSEntityDescription.insertNewObject(forEntityName: type(of: self).locationEntityName, into: context) as? Location else {
+        guard let locationManagedObject = NSEntityDescription.insertNewObject(forEntityName: CoreDataConstants.EntityNames.locationEntityName, into: context) as? Location else {
             throw DBErrors.entityCreationError
         }
         locationManagedObject.name = location.name
@@ -51,7 +49,7 @@ extension CoreDataInteractorImpl: CoreDataInteractor {
             }
             
             
-            let locationsFetchRequest = NSFetchRequest<Location>(entityName: type(of: selfUnwrp).locationEntityName)
+            let locationsFetchRequest = NSFetchRequest<Location>(entityName: CoreDataConstants.EntityNames.locationEntityName)
             let asynchronousFetchRequest = NSAsynchronousFetchRequest(fetchRequest: locationsFetchRequest) { (asynchronousFetchResult) in
                 
                 // Retrieves an array of dogs from the fetch result `finalResult`

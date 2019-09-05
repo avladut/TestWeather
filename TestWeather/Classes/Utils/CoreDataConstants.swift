@@ -12,4 +12,9 @@ import CoreData
 
 struct CoreDataConstants {
     static let mainContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    struct EntityNames {
+        static let locationEntityName = "Location"
+    }
 }
+
